@@ -43,7 +43,7 @@ export default function TodoForm({ onAdd }: TodoFormProps) {
           type="text"
           placeholder="Add a task..."
           {...register("name", { required: "Title is required" })}
-          className="border p-2 w-full"
+          className="border p-2 w-full rounded-2xl"
         />
 
         <select
