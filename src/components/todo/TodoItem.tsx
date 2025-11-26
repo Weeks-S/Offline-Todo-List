@@ -57,7 +57,7 @@ export default function TodoItem({
         <input
           value={newName}
           onChange={(e) => setNewName(e.target.value)}
-          className="border p-1 flex-1 mr-2"
+          className="border py-1 px-2 flex-1 mr-2 rounded-2xl"
         />
       ) : (
         <>
@@ -65,7 +65,8 @@ export default function TodoItem({
             type="checkbox"
             onChange={() => handleToggle(todo.id)}
             checked={todo.status}
-          ></input>
+            className="cursor-pointer"
+          />
           <div
             className={`flex-1 font-semibold ${
               todo.status ? "line-through text-gray-500" : ""

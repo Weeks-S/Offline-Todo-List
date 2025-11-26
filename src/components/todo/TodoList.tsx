@@ -43,7 +43,7 @@ export default function TodoList({
         items={todos.map((t) => t.id)}
         strategy={verticalListSortingStrategy}
       >
-        <ul className="space-y-2 overflow-y-scroll h-96">
+        <ul className="space-y-2 overflow-y-auto h-auto max-h-2/3">
           {todos.map((todo) => (
             <TodoItem
               key={todo.id}

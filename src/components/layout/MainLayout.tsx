@@ -1,5 +1,5 @@
 import App from "../../App";
-import WeatherWidget from "../weather/Weather";
+import WeatherWidget from "../weather/WeatherWidget";
 
 export default function MainLayout() {
     return (

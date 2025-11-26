@@ -37,6 +37,7 @@ export default function WeatherWidget() {
       ) : data ? (
         <>
           <h2 className="text-lg font-bold">Weather</h2>
+          <hr />
           <div className="flex">
             <img
               src={data.current.condition.icon}

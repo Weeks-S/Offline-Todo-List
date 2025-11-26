@@ -97,35 +97,37 @@ export default function TodoPages() {
   };
 
   return (
-    <div className="max-w-md mx-auto p-4">
+    <div className="max-w-3xl mx-auto p-4 max-h-screen">
       <div className="flex justify-between">
         <h1 className="text-2xl font-bold mb-4">Todo List</h1>
-        <button
-          className={`text-white transition flex ${
-            !addForm ? "bg-green-400" : "bg-red-400"
-          } px-4 py-2 rounded-2xl mb-4 transition-colors duration-300 cursor-pointer`}
-          onClick={() => setAddForm(!addForm)}
-        >
-          {!addForm ? (
-            <PiPlus className="w-6 h-6" />
-          ) : (
-            <BiX className="w-6 h-6" />
-          )}{" "}
-          Add Todo
-        </button>
-        <button
-          className={`text-white transition flex ${
-            !searchTodo ? "bg-blue-400" : "bg-red-400"
-          } px-4 py-2 rounded-2xl mb-4 transition-colors duration-300 cursor-pointer`}
-          onClick={() => setSearchTodo(!searchTodo)}
-        >
-          {!searchTodo ? (
-            <PiPlus className="w-6 h-6" />
-          ) : (
-            <BiX className="w-6 h-6" />
-          )}{" "}
-          Search
-        </button>
+        <div className="flex space-x-4">
+          <button
+            className={`text-white transition flex ${
+              !addForm ? "bg-green-400" : "bg-red-400"
+            } px-4 py-2 rounded-2xl mb-4 transition-colors duration-300 cursor-pointer`}
+            onClick={() => setAddForm(!addForm)}
+          >
+            {!addForm ? (
+              <PiPlus className="w-6 h-6" />
+            ) : (
+              <BiX className="w-6 h-6" />
+            )}{" "}
+            Add Todo
+          </button>
+          <button
+            className={`text-white transition flex ${
+              !searchTodo ? "bg-blue-400" : "bg-red-400"
+            } px-4 py-2 rounded-2xl mb-4 transition-colors duration-300 cursor-pointer`}
+            onClick={() => setSearchTodo(!searchTodo)}
+          >
+            {!searchTodo ? (
+              <PiPlus className="w-6 h-6" />
+            ) : (
+              <BiX className="w-6 h-6" />
+            )}{" "}
+            Search
+          </button>
+        </div>
       </div>
       <div
         className={`overflow-hidden ${
