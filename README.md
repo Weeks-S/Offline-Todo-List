@@ -8,11 +8,11 @@ A simple Todo application built with React, Redux, and Typescript.
 
 1. Clone the repository:
 ```
-git clone https://github.com/your-username/todo-app.git
+git clone https://github.com/Weeks-S/Offline-Todo-List.git
 ```
 2. Install dependencies:
 ```
-cd todo-app
+cd Offline-Todo-List
 npm install
 ```
 3. Create a `.env` file in the root directory and add your Weather API key:
